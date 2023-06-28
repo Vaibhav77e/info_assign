@@ -1,9 +1,11 @@
+import 'dart:convert';
+
 class ProductDataModel {
-  final String id;
-  final String title;
-  final String description;
-  final double price;
-  final String imageUrl;
+  int? id;
+  String? title;
+  String? description;
+  double? price;
+  String? imageUrl;
 
   ProductDataModel(
       {required this.id,
@@ -11,4 +13,13 @@ class ProductDataModel {
       required this.description,
       required this.price,
       required this.imageUrl});
+
+  // ProductDataModel.toJson( Map<String dynamic> json){
+  //   id = json['id'];
+  //   title=json['title'];
+  //   description=json['description'];
+  //   price=json['price'];
+  //   imageUrl=json['imageUrl'];
+
+  // }
 }
